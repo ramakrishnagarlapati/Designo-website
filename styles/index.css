@@ -1,0 +1,232 @@
+/* home-page-intro */
+
+.home-page-intro_bg-container {
+  max-height: 70rem;
+  background-color: var(--primary-peach-clr);
+  background-image: url("../assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: top 10rem left 0px;
+  background-size: cover;
+  color: var(--primary-white-clr);
+  padding: 8rem 2.4rem 0 2.4rem;
+  text-align: center;
+  overflow: hidden;
+}
+.home-page-intro_heading {
+  font-size: var(--fs-400);
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+  line-height: var(--line-height-lg);
+}
+.home-page-intro_paragraph {
+  font-size: var(--fs-100);
+  line-height: var(--line-height-sm);
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .home-page-intro_bg-container {
+    border-radius: 8px;
+    padding: 6rem 8rem 0 8rem;
+    max-height: 85rem;
+    background-size: auto;
+    background-position: top 10rem left 17rem;
+  }
+  .home-page-intro_heading {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-page-intro_bg-container {
+    display: flex;
+    max-height: 64rem;
+    text-align: start;
+    padding: 14.5rem 9.5rem;
+    background-size: contain;
+    background-position: top 0 right 0;
+    position: relative;
+  }
+  .home-page-intro_text-container {
+    max-width: 55rem;
+  }
+  .home-page-intro_img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* .home-page-desgins */
+
+.home-page-designs {
+  margin: 12rem 0;
+}
+.home-page-designs_container {
+  padding: 0 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 25rem);
+  gap: 2.4rem;
+}
+.home-page-designs_design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  border-radius: 15px;
+}
+.home-page-designs_design--1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/home/mobile/image-web-design.jpg") no-repeat center;
+  background-size: cover;
+}
+.home-page-designs_design--2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/home/mobile/image-app-design.jpg") no-repeat center;
+  background-size: cover;
+}
+.home-page-designs_design--3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/home/mobile/image-graphic-design.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.home-page-designs_design-title {
+  font-size: var(--fs-300);
+  color: var(--primary-white-clr);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-sm);
+}
+.home-page-designs_projects-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-white-clr);
+  font-size: var(--fs-100);
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing-lg);
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.home-page-designs_projects-link:hover {
+  color: var(--primary-peach-clr);
+}
+@media (min-width: 768px) {
+  .home-page-designs_container {
+    padding: 0;
+    grid-template-rows: repeat(3, 20rem);
+    gap: 2.4rem;
+  }
+  .home-page-designs_design--1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../assets/home/tablet/image-web-design.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .home-page-designs_design--2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../assets/home/tablet/image-app-design.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .home-page-designs_design--3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../assets/home/tablet/image-graphic-design.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .home-page-designs_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    row-gap: 2.4rem;
+    column-gap: 3rem;
+  }
+  .home-page-designs_design--1 {
+    grid-row: 1/3;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../assets/home/desktop/image-web-design-large.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .home-page-designs_design--2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../assets/home/desktop/image-app-design.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .home-page-designs_design--3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../assets/home/desktop/image-graphic-design.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+/* home-page-services */
+
+.home-page-services {
+  /* margin-bottom: 12rem; */
+  padding: 0 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 8rem;
+}
+.home-page-services_service {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 4.5rem;
+}
+.home-page-services_service-bg-img-container {
+  border-radius: 50%;
+  background: linear-gradient(
+      to left,
+      rgba(255, 173, 155, 0.1),
+      rgba(255, 173, 155, 0.1)
+    ),
+    url("../assets/home/desktop/bg-pattern-hero-home.svg") no-repeat center;
+}
+.home-page-services_service-title {
+  font-size: var(--fs-200);
+  color: var(--secondary-dark-grey-clr);
+  letter-spacing: var(--letter-spacing-lg);
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.home-page-services_service-text {
+  font-size: var(--fs-100);
+  color: var(--secondary-dark-grey-clr);
+  line-height: var(--line-height-sm);
+}
+
+@media (min-width: 768px) {
+  .home-page-services_service {
+    flex-direction: row;
+    text-align: start;
+  }
+  .home-page-services_service-title {
+    margin-bottom: 1.6rem;
+  }
+  .home-page-services_service-bg-img-container {
+    flex-basis: 35%;
+  }
+  .home-page-services_service-text-container {
+    flex-basis: 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-page-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 3rem;
+  }
+  .home-page-services_service {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-page-services_service-title {
+    margin-bottom: 3.2rem;
+  }
+}

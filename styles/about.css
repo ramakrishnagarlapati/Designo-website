@@ -1,0 +1,106 @@
+/* about us section */
+
+.about-us,
+.world-class,
+.real-deal {
+  display: flex;
+  flex-direction: column;
+}
+.about-us_img,
+.world-class_img,
+.real-deal_img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-us_text-container {
+  background-color: var(--primary-peach-clr);
+  padding: 8rem 2.4rem;
+  background-image: url("../assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+  background-position: top -200px right 0;
+  text-align: center;
+  color: var(--primary-white-clr);
+}
+.world-class_text-container,
+.real-deal_text-container {
+  background-color: rgba(255, 173, 155, 0.2);
+  padding: 8rem 2.4rem;
+  background-image: url("../assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-position: top 300px right 100px;
+  text-align: center;
+}
+
+.about-us_heading,
+.world-class_heading,
+.real-deal_heading {
+  font-size: var(--fs-400);
+  margin-bottom: 2.4rem;
+  font-weight: 500;
+}
+.world-class_heading,
+.real-deal_heading {
+  color: var(--primary-peach-clr);
+}
+.about-us_desc,
+.world-class_desc,
+.real-deal_desc {
+  font-size: 15px;
+  line-height: var(--line-height-sm);
+}
+.world-class_desc,
+.real-deal_desc {
+  color: var(--secondary-dark-grey-clr);
+}
+.world-class_desc *:not(:last-child),
+.real-deal_desc *:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .about-us,
+  .world-class,
+  .real-deal {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .about-us {
+    margin-bottom: 12rem;
+  }
+  .about-us_text-container,
+  .world-class_text-container,
+  .real-deal_text-container {
+    padding: 6.4rem 5.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us {
+    margin-bottom: 16rem;
+  }
+  .about-us,
+  .real-deal {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .world-class {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+  }
+  .about-us_text-container,
+  .world-class_text-container,
+  .real-deal_text-container {
+    padding: 13.5rem 9.5rem;
+    text-align: start;
+  }
+  .about-us_img-container picture,
+  .world-class_img-container picture,
+  .real-deal_img-container picture {
+    height: 100%;
+  }
+  .about-us_img-container,
+  .real-deal_img-container {
+    order: 2;
+  }
+}

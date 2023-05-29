@@ -1,0 +1,120 @@
+.contact-us {
+  background-color: var(--primary-peach-clr);
+  padding: 7.2rem 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4.8rem;
+
+  background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+  background-position: top -80px left 30px;
+  background-repeat: no-repeat;
+}
+.contact-us_text-container {
+  text-align: center;
+  color: var(--primary-white-clr);
+}
+.contact-us_heading {
+  font-size: var(--fs-400);
+  margin-bottom: 2.4rem;
+  font-weight: 500;
+}
+.contact-us_desc {
+  font-size: 15px;
+  line-height: var(--line-height-sm);
+}
+.form-control {
+  position: relative;
+}
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--primary-white-clr);
+  background-color: inherit;
+  outline: none;
+  padding: 1.2rem 1.6rem;
+  color: var(--primary-white-clr);
+  font-size: var(--fs-100);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--primary-white-clr);
+  font-size: var(--fs-100);
+  opacity: 0.5;
+}
+.form-control.success input,
+.form-control.success textarea {
+  border-bottom: 3px solid var(--primary-white-clr);
+}
+.error-message {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--primary-white-clr);
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.success-message {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-white-clr);
+}
+.form-control.success .success-message {
+  display: block;
+}
+.form-control.error .error-message {
+  display: flex;
+}
+.error-img-icon {
+  margin-left: 1rem;
+}
+.submit-btn-container {
+  text-align: right;
+  margin-top: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .contact-us {
+    border-radius: 15px;
+    padding: 7.1rem 5.8rem;
+    gap: 4rem;
+    background-position: top -150px left -30px;
+  }
+  .contact-us_text-container {
+    text-align: start;
+  }
+  .contact-us_heading {
+    margin-bottom: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-us {
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .contact-us_text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* change padding top only on contact page */
+.footer_wrapper {
+  padding-top: 6.4rem;
+}
+@media (min-width: 768px) {
+  .footer_wrapper {
+    padding-top: 8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer_wrapper {
+    padding-top: 7.2rem;
+  }
+}

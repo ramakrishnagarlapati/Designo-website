@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* --------- */
+/* CSS RESET */
+/* --------- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  width: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Jost", sans-serif;
+  position: relative;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ----------------- */
+/* CUSTOM PROPERTIES */
+/* ----------------- */
+:root {
+  /* colors */
+  --primary-peach-clr: #e7816b;
+  --primary-black-clr: #1d1c1e;
+  --primary-white-clr: #ffffff;
+
+  --secondary-light-peach-clr: #ffad9b;
+  --secondary-dark-grey-clr: #333136;
+  --secondary-light-grey-clr: #f1f3f5;
+
+  /* font-sizes */
+  --fs-100: 1.6rem;
+  --fs-200: 2rem;
+  --fs-300: 2.8rem;
+  --fs-400: 3.2rem;
+
+  /* line heights */
+  --line-height-sm: 2.6rem;
+  --line-height-lg: 3.6rem;
+
+  /* letter-spacing */
+  --letter-spacing-lg: 5px;
+  --letter-spacing-sm: 2px;
+}
+@media (min-width: 768px) {
+  :root {
+    /* font-sizes */
+    --fs-100: 1.6rem;
+    --fs-200: 2rem;
+    --fs-300: 4rem;
+    --fs-400: 4.8rem;
+    /* line heights */
+    --line-height-sm: 2.6rem;
+    --line-height-lg: 4.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    /* font-sizes */
+    --fs-100: 1.6rem;
+    --fs-200: 2rem;
+    --fs-300: 4rem;
+    --fs-400: 4.8rem;
+    /* line heights */
+    --line-height-sm: 2.6rem;
+    --line-height-lg: 4.8rem;
+  }
+}
